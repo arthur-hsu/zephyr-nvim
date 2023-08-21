@@ -142,7 +142,7 @@ local syntax = {
   SpecialChar = { fg = z.yellow },
   Type = { fg = z.teal },
   Function = { fg = z.yellow },
-  String = { fg = z.lignt_orange },
+  String = { fg = z.dark_green },
   Character = { fg = z.green },
   Constant = { fg = z.cyan },
   Macro = { fg = z.cyan },
