@@ -13,7 +13,7 @@ local z = {
     base7 = "#9ca0a4",
     base8 = "#b1b1b1",
 
-    bg = "#1b2229",
+    bg = "#191919",
     bg1 = "#504945",
     bg_popup = "#3E4556",
     bg_highlight = "#2E323C",
@@ -27,6 +27,7 @@ local z = {
     orange = "#FF8700",
     yellow = "#f7bb3b",
     lignt_orange = "#fab795",
+    vs_orange = '#f99979',
     green = "#afd700",
     -- #a8eb44
     dark_green = "#98be65",
@@ -143,7 +144,7 @@ local syntax = {
         SpecialChar = { fg = z.yellow },
         Type = { fg = z.teal },
         Function = { fg = z.yellow },
-        String = { fg = z.light_purple},
+        String = { fg = z.vs_orange},
         Character = { fg = z.green },
         Constant = { fg = z.cyan },
         Macro = { fg = z.cyan },
