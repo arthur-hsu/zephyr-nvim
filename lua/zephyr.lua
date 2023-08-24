@@ -95,7 +95,8 @@ local syntax = {
     WarningMsg = { fg = z.yellow, bg = z.none, bold = true },
     ModeMsg = { fg = z.fg, bg = z.none, bold = true },
     MatchParen = { fg = z.red, bg = z.none },
-    NonText = { fg = z.bg1 },
+    -- virtual text
+    NonText = { fg = z.base6 },
     Whitespace = { fg = z.base4 },
     SpecialKey = { fg = z.bg1 },
     Pmenu = { fg = z.fg, bg = z.bg_popup },
