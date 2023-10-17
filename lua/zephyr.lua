@@ -20,7 +20,8 @@ local z = {
     bg_visual = "#b3deef",
 
     fg = "#bbc2cf",
-    fg_alt = "#5B6268",
+    --fg_alt = "#5B6268"
+    fg_alt = "#bbc2cf",
 
     red = "#e95678",
     redwine = "#d16d9e",
@@ -83,7 +84,7 @@ local syntax = {
     CursorIM = { bg = z.none, reverse = true },
     CursorColumn = { bg = z.bg_highlight },
     CursorLine = { bg = z.bg_highlight },
-    LineNr = { fg = z.base4 },
+    LineNr = { fg = z.light_purple },
     qfLineNr = { fg = z.cyan },
     CursorLineNr = { fg = z.blue },
     DiffAdd = { fg = z.black, bg = z.dark_green },
@@ -96,7 +97,7 @@ local syntax = {
     ModeMsg = { fg = z.fg, bg = z.none, bold = true },
     MatchParen = { fg = z.red, bg = z.none },
     -- virtual text
-    NonText = { fg = z.base6 },
+    NonText = { fg = z.base7 },
     Whitespace = { fg = z.base4 },
     SpecialKey = { fg = z.bg1 },
     Pmenu = { fg = z.fg, bg = z.bg_popup },
@@ -222,7 +223,7 @@ local syntax = {
         GitSignsChange = { fg = z.blue },
         GitSignsDelete = { fg = z.red },
         GitSignsAddNr = { fg = z.dark_green },
-        GitSignsChangeNr = { fg = z.blue },
+        GitSignsChangeNr = { fg = z.orange },
         GitSignsDeleteNr = { fg = z.red },
         GitSignsAddLn = { bg = z.bg_popup },
         GitSignsChangeLn = { bg = z.bg_highlight },
