@@ -293,6 +293,8 @@ local syntax = {
         NeogitDiffContextHighlight = { fg = z.blue },
         NeogitHunkHeader = { fg = z.fg },
         NeogitHunkHeaderHighlight = { fg = z.redwine },
+        -- Noice
+        MsgArea = { fg = z.light_purple,bg=z.bg },
     }
 
     local async_load_plugin
