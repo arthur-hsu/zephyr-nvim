@@ -2,6 +2,7 @@
 -- Author: glepnir
 -- License: MIT
 -- Source: http://github.com/glepnir/z-nvim
+
 local z = {
     base0 = "#1B2229",
     base1 = "#1c1f24",
@@ -25,11 +26,11 @@ local z = {
 
     red = "#e95678",
     redwine = "#d16d9e",
-    orange = "#FF8700",
+    orange = "#FEA405",
     yellow = "#f7bb3b",
     lignt_orange = "#fab795",
     vs_orange = '#f99979',
-    green = "#afd700",
+    green = "#88D97B",
     -- #a8eb44
     dark_green = "#98be65",
     cyan = "#36d0e0",
