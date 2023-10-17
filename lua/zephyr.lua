@@ -294,7 +294,7 @@ local syntax = {
         NeogitHunkHeader = { fg = z.fg },
         NeogitHunkHeaderHighlight = { fg = z.redwine },
         -- Noice
-        MsgArea = { fg = z.light_purple,bg=z.bg },
+        MsgArea = { fg = z.teal, bg='#191919'  }
     }
 
     local async_load_plugin
