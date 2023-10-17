@@ -20,8 +20,8 @@ local z = {
     bg_visual = "#b3deef",
 
     fg = "#bbc2cf",
-    --fg_alt = "#5B6268"
-    fg_alt = "#bbc2cf",
+    fg_alt = "#5B6268",
+    --fg_alt = "#bbc2cf",
 
     red = "#e95678",
     redwine = "#d16d9e",
@@ -97,7 +97,7 @@ local syntax = {
     ModeMsg = { fg = z.fg, bg = z.none, bold = true },
     MatchParen = { fg = z.red, bg = z.none },
     -- virtual text
-    NonText = { fg = z.base7 },
+    NonText = { fg = "#EBACC5" },
     Whitespace = { fg = z.base4 },
     SpecialKey = { fg = z.bg1 },
     Pmenu = { fg = z.fg, bg = z.bg_popup },
@@ -152,7 +152,7 @@ local syntax = {
         Macro = { fg = z.cyan },
         Identifier = { fg = z.blue },
 
-        Comment = { fg = z.base6, italic = true },
+        Comment = { fg = z.base8, italic = true },
         SpecialComment = { fg = z.grey },
         Todo = { fg = z.violet },
         Delimiter = { fg = z.fg },
