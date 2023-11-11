@@ -175,7 +175,8 @@ local syntax = {
         ["@type"] = { fg = z.teal },
         ["@variable"] = { fg = "#f2f2bf" },
         ["@punctuation.bracket"] = { fg = z.bracket },
-
+        
+        BufferLineBufferSelected = { fg = z.magenta, bold = true,italic=true },
         vimCommentTitle = { fg = z.grey, bold = true },
         vimLet = { fg = z.orange },
         vimVar = { fg = z.cyan },
