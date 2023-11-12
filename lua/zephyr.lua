@@ -110,7 +110,7 @@ local syntax = {
     StatusLine = { fg = z.base8, bg = z.base2 },
     StatusLineNC = { fg = z.grey, bg = z.base2 },
     Question = { fg = z.yellow },
-    NormalFloat = { fg = z.base8, bg = z.bg_highlight },
+    NormalFloat = { fg = z.base8, bg = z.base2 },
     Tabline = { fg = z.base6, bg = z.base2 },
     TabLineSel = { fg = z.fg, bg = z.blue },
     SpellBad = { fg = z.red, bg = z.none, undercurl = true },
@@ -177,7 +177,7 @@ local syntax = {
         ["@punctuation.bracket"] = { fg = z.bracket },
         
         BufferLineBufferSelected = { fg = z.magenta, bold = true,italic=true },
-        NotifyBackground = { bg = z.bg_popup },
+        NotifyBackground = { bg = "#000000" },
         vimCommentTitle = { fg = z.grey, bold = true },
         vimLet = { fg = z.orange },
         vimVar = { fg = z.cyan },
