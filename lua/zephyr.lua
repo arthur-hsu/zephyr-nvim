@@ -71,7 +71,7 @@ local syntax = {
     Terminal = { fg = z.fg, bg = z.bg },
     SignColumn = { fg = z.fg, bg = z.bg },
     FoldColumn = { fg = z.fg_alt, bg = z.black },
-    VertSplit = { fg = z.black, bg = z.bg },
+    VertSplit = { fg = z.light_purple,bold=true },
     Folded = { fg = z.lignt_orange, bg = z.bg_highlight },
     EndOfBuffer = { fg = z.bg, bg = z.none },
     IncSearch = { fg = z.bg1, bg = z.yellow,bold=true },
@@ -177,6 +177,7 @@ local syntax = {
         ["@punctuation.bracket"] = { fg = z.bracket },
         
         BufferLineBufferSelected = { fg = z.magenta, bold = true,italic=true },
+        NotifyBackground = { bg = z.bg_popup },
         vimCommentTitle = { fg = z.grey, bold = true },
         vimLet = { fg = z.orange },
         vimVar = { fg = z.cyan },
