@@ -87,7 +87,7 @@ local syntax = {
     CursorLine = { bg = z.bg_highlight },
     LineNr = { fg = z.light_purple },
     qfLineNr = { fg = z.cyan },
-    CursorLineNr = { fg = z.magenta,bold=true },
+    CursorLineNr = { fg = "#EBACC5",bold=true,italic=true },
     DiffAdd = { fg = z.black, bg = z.dark_green },
     DiffChange = { fg = z.black, bg = z.yellow },
     DiffDelete = { fg = z.black, bg = z.red },
