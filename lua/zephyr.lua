@@ -144,7 +144,7 @@ local syntax = {
     Operator            = { fg = z.redwine },
     Title               = { fg = z.green, bold = true },
     Special             = { fg = z.teal },
-    SpecialChar         = { fg = z.yellow },
+    SpecialChar         = { fg = z.teal },
     Type                = { fg = z.teal },
     Function            = { fg = z.yellow },
     String              = { fg = z.vs_orange},
