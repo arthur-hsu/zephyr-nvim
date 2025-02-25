@@ -71,7 +71,7 @@ local syntax = {
     Normal              = { fg = z.fg, bg = z.bg },
     Terminal            = { fg = z.fg, bg = z.bg },
     SignColumn          = { fg = z.fg, bg = z.bg },
-    FoldColumn          = { fg = z.fg_alt, bg = z.black },
+    FoldColumn          = { fg = z.fg_alt },
     VertSplit           = { fg = z.light_purple,bold=true },
     Folded              = { fg = z.lignt_orange, bg = z.bg_highlight },
     EndOfBuffer         = { fg = z.bg, bg = z.none },
