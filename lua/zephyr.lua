@@ -4,6 +4,7 @@
 -- Source: http://github.com/glepnir/z-nvim
 
 local z = {
+    none  = "NONE",
     base0 = "#1B2229",
     base1 = "#1C1F24",
     base2 = "#202328",
@@ -25,12 +26,12 @@ local z = {
 
     red          = "#E95678",
     redwine      = "#D16D9E",
+    pink         = "#EBACC5",
     orange       = "#FEA405",
     yellow       = "#F7C251",
     lignt_orange = "#FAB795",
     vs_orange    = '#F99979',
     green        = "#88D97B",
-    -- #a8eb44
     dark_green   = "#98BE65",
     cyan         = "#36D0E0",
     blue         = "#61AFEF",
@@ -42,8 +43,9 @@ local z = {
     black        = "#000000",
 
     bracket      = "#80A0C2",
-    none         = "NONE",
-    light_purple = "#B3B8F5"
+    light_purple = "#B3B8F5",
+    light_green  = "#A8EB44",
+    light_yellow = "#F2F2BF",
 }
 
 function z.terminal_color()
@@ -75,7 +77,7 @@ local syntax = {
     EndOfBuffer         = { fg = z.bg, bg = z.none },
     IncSearch           = { fg = z.bg, bg = z.light_purple, bold = false },
     Search              = { fg = z.bg, bg = z.light_purple, bold = false },
-    CurSearch           = { fg = z.bg, bg = '#A8EB44', bold = true },
+    CurSearch           = { fg = z.bg, bg = z.light_green, bold = true },
     ColorColumn         = { bg = z.bg_highlight },
     Conceal             = { fg = z.green, bg = z.none },
     Cursor              = { bg = z.none, reverse = true },
@@ -87,7 +89,7 @@ local syntax = {
     CursorLine          = { bg = z.bg_highlight },
     LineNr              = { fg = z.light_purple },
     qfLineNr            = { fg = z.cyan },
-    CursorLineNr        = { fg = "#EBACC5",bold=true,italic=true },
+    CursorLineNr        = { fg = z.pink,bold=true,italic=true },
     DiffAdd             = { fg = z.black, bg = z.dark_green },
     DiffChange          = { fg = z.black, bg = z.yellow },
     DiffDelete          = { fg = z.black, bg = z.red },
@@ -98,7 +100,7 @@ local syntax = {
     ModeMsg             = { fg = z.fg, bg = z.none, bold = true },
     MatchParen          = { fg = z.red, bg = z.none },
     -- virtual text
-    NonText             = { fg = "#EBACC5" },
+    NonText             = { fg = z.pink },
     Whitespace          = { fg = z.base4 },
     SpecialKey          = { fg = z.bg1 },
     Pmenu               = { fg = z.fg, bg = z.bg_popup },
@@ -144,7 +146,7 @@ local syntax = {
     Operator            = { fg = z.redwine },
     Title               = { fg = z.green, bold = true },
     Special             = { fg = z.teal },
-    SpecialChar         = { fg = z.teal },
+    SpecialChar         = { fg = z.yellow },
     Type                = { fg = z.teal },
     Function            = { fg = z.yellow },
     String              = { fg = z.vs_orange},
@@ -173,7 +175,7 @@ local syntax = {
         ["@keyword.function"]      = { fg = z.red },
         ["@property"]              = { fg = z.yellow },
         ["@type"]                  = { fg = z.teal },
-        ["@variable"]              = { fg = "#f2f2bf" },
+        ["@variable"]              = { fg = z.light_yellow },
         ["@punctuation.bracket"]   = { fg = z.bracket },
         
         BufferLineBufferSelected   = { fg = z.magenta, bold = true,italic=true },
@@ -279,7 +281,7 @@ local syntax = {
 
         -- nvim-cmp
         CmpItemAbbr                = { fg = z.fg },
-        CmpItemAbbrMatch           = { fg = "#A6E22E" },
+        CmpItemACmpItemAbbrMatch   = { fg = z.light_green },
         CmpItemMenu                = { fg = z.violet },
         CmpItemKindVariable        = { fg = z.blue },
         CmpItemKindFiled           = { fg = z.magenta },
@@ -297,7 +299,7 @@ local syntax = {
         NeogitHunkHeader           = { fg = z.fg },
         NeogitHunkHeaderHighlight  = { fg = z.redwine },
         -- Noice
-        MsgArea                    = { fg = z.teal, bg='#191919'  }
+        MsgArea                    = { fg = z.teal, bg=z.bg  }
     }
 
     local async_load_plugin
@@ -317,9 +319,9 @@ local syntax = {
     function z.colorscheme()
         vim.api.nvim_command("hi clear")
 
-        vim.o.background = "dark"
+        vim.o.background    = "dark"
         vim.o.termguicolors = true
-        vim.g.colors_name = "zephyr"
+        vim.g.colors_name   = "zephyr"
         set_hl(syntax)
         async_load_plugin:send()
     end
