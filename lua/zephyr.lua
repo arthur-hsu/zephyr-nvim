@@ -188,7 +188,7 @@ local syntax = {
         vimIsCommand               = { fg = z.fg },
         vimCommand                 = { fg = z.blue },
         vimNotFunc                 = { fg = z.violet, bold = true },
-        vimUserFunc                = { fg = z.yellow, bold = true },
+        vimUserFun                = { fg = z.yellow, bold = true },
         vimFuncName                = { fg = z.yellow, bold = true },
 
         diffAdded                  = { fg = z.dark_green },
@@ -227,9 +227,11 @@ local syntax = {
 
         GitSignsAdd                = { fg = z.dark_green },
         GitSignsChange             = { fg = z.blue },
+        GitSignsChangedelete       = { fg = z.orange },
         GitSignsDelete             = { fg = z.red },
         GitSignsAddNr              = { fg = z.dark_green },
-        GitSignsChangeNr           = { fg = z.orange },
+        GitSignsChangeNr           = { fg = z.blue },
+        GitSignsChangedeleteNr     = { fg = z.orange },
         GitSignsDeleteNr           = { fg = z.red },
         GitSignsAddLn              = { bg = z.bg_popup },
         GitSignsChangeLn           = { bg = z.bg_highlight },
